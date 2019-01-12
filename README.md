@@ -1,15 +1,12 @@
-# Projet R
+# Dashboard R Shiny
 
-Projet R - Dashboard  
-Dataset regroupant tous les projets de la plateforme de financement participatif Kickstarter depuis 2009  
-378661 projets avec chacun 15 variables tel que le pays, le nom du projet, le montant demandé, le montant récolté, etc.  
+Dataset gathering all the projects from Kickstarter cowdfunding platform since 2009  
+378661 projects, each with 15 variables such as country, project name, amount requested, amount raised, etc.   
 
 
-## Installation des packages R
-
-Votre projet nécessite l'installation de packages supplémentaires. Décrivez ici les lignes de codes R à exécuter avant de lancer le script proprement dit.  
-
-Déjà tout dans le notebook mais au cas où :  
+## Packages installation
+ 
+Everything is in the notebook but in case of :  
 
 package_install = c("shiny", "leaflet","lubridate","tidyverse","countrycode",'treemap',"devtools","geojsonio","ggthemes")  
 install.packages(package_install)  
@@ -31,25 +28,21 @@ library("geojsonio")
 library("rgdal")  
 
 
-## Le script
+## Script
 
-Vous décrivez ici les opérations nécessaires à l'exécution de votre notebook dans R Studio.
+Description of the required operations to run the notebook in R Studio.
 
-Ouvrir kickstarter.Rproj dans R.  
-Une fois le projet ouvert, ouvrir kickstarter_notebook.Rmd, ui.R et server.R dans Files si ils ne le sont pas déjà.  
-Puis "Run all" (Ctrl+Alt+R) kickstarter_notebook.Rmd.  
-Attendre que tout charge (un peu long à cause du téléchargement du csv et des packages).  
+Open kickstarter.Rproj in R studio.  
+Once the project is open, open kickstarter_notebook.Rmd, ui.R and server.R in Files if they are not already open.  
+Then "Run all" (Ctrl+Alt+R) kickstarter_notebook.Rmd.  
+Wait for everything to load (a little long because of the download of the csv and packages).  
 
-S'il y a une erreur avec " cntryname <- countrycode(unique(ksprojects1$country), "iso2c", "country.name.fr") "  
-changer le "country.name.fr" en "un.name.fr". Le package ne se met pas bien à jour parfois, je n'ai pas réussi à regler   
-le probleme car cela vient apparemment du serveur où il le télecharge.  
+If there is an error with "cntryname <- countrycode(unique(ksprojects1$country), "iso2c", "country.name.fr")""  
+change the "country.name.fr" to "un.name.fr". I don't why there is this error.
 
-Un fois fini aller dans ui.R et "Run App".  
-Attendre un peu que les différents graphiques chargent.  
+Once finished go to ui.R and "Run App".  
+Wait a little while for the different graphs to load.  
 
-S'il y a besoin de recharger le csv, décommenter la ligne "#ksprojects <- read.csv("ks-projects-201801.csv",encoding="UTF-8")" et executer la.  
-Cela permet de charger directement le csv localement (ce qui va beaucoup plus vite).  
-
-
-
-# kickstarter-dashboard-R
+If there is a need to reload the csv, uncomment the line "#ksprojects <- read.csv("ks-projects-201801.csv",encoding="UTF-8")" and 
+execute it.  
+This allows the csv to be loaded directly locally (which goes much faster).  
