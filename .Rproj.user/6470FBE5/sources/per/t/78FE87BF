@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541361821936.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1778825107",
+    "id" : "78FE87BF",
+    "lastKnownWriteTime" : 1541363613,
+    "last_content_update" : 1541363613393,
+    "path" : "C:/Users/Anon/R/projetR/kickstarter_notebook.Rmd",
+    "project_path" : "kickstarter_notebook.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "33,0",
+        "scrollLine" : "24"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
