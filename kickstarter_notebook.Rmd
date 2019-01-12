@@ -25,11 +25,11 @@ library("d3treeR")
 
 Please wait a few minutes, downloading can be a bit long
 ```{r}
-#ksprojects <- read.csv(url("https://perso.esiee.fr/~hamamic/cgi-bin/R/kickstarter/ks-projects-201801.csv"),encoding="UTF-8")
+ksprojects <- read.csv(url("https://perso.esiee.fr/~hamamic/cgi-bin/R/kickstarter/ks-projects-201801.csv"),encoding="UTF-8")
 ```
 
 ```{r}
-ksprojects <- read.csv("ks-projects-201801.csv",encoding="UTF-8")
+#ksprojects <- read.csv("ks-projects-201801.csv",encoding="UTF-8")
 ```
 
 
