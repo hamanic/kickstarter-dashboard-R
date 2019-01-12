@@ -6,7 +6,7 @@ Dataset gathering all the projects from Kickstarter cowdfunding platform since 2
 
 ## Packages installation
  
-Everything is in the notebook but in case of :  
+Everything is in the notebook but here's all the packages needed :  
 
 package_install = c("shiny", "leaflet","lubridate","tidyverse","countrycode",'treemap',"devtools","geojsonio","ggthemes")  
 install.packages(package_install)  
@@ -45,4 +45,4 @@ Wait a little while for the different graphs to load.
 
 If there is a need to reload the csv, uncomment the line "#ksprojects <- read.csv("ks-projects-201801.csv",encoding="UTF-8")" and 
 execute it.  
-This allows the csv to be loaded directly locally (which goes much faster).  
+This allows the csv to be loaded locally (which goes much faster).  
