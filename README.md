@@ -1,6 +1,6 @@
 # Dashboard R Shiny
 
-Dataset gathering all the projects from Kickstarter cowdfunding platform since 2009  
+Dataset gathering all the projects from Kickstarter crowdfunding platform since 2009  
 378661 projects, each with 15 variables such as country, project name, amount requested, amount raised, etc.   
 
 
